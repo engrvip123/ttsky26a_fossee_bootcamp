@@ -1,6 +1,6 @@
 ## How it works
 
-This project implements a 3-stage current-starved ring VCO designed in the SkyWater Sky130 130nm open-source PDK. The oscillator core uses PMOS current-source loads and NMOS tail-current sources controlled by a single control voltage (Vctrl). By varying Vctrl, the current through each delay stage is starved or boosted, directly tuning the oscillation frequency. A two-stage CMOS output buffer ensures rail-to-rail swing and isolates the oscillator core from external capacitive loading. The VCO achieves a tuning range of approximately 5.27 MHz to 57.57 MHz across Vctrl = 0.7V to 1.7V, with a linear gain (KVCO) of ~80.2 MHz/V in the 0.7V–1.2V region.
+This project implements a 3-stage current-starved ring VCO designed in the SkyWater Sky130 130nm open-source PDK. The oscillator core uses PMOS current-source loads and NMOS tail-current sources controlled by a single control voltage (Vctrl). By varying Vctrl, the current through each delay stage is starved or boosted, directly tuning the oscillation frequency. A two-stage CMOS output buffer ensures rail-to-rail swing and isolates the oscillator core from external capacitive loading. The VCO achieves a tuning range of approximately 5.27 MHz to 57.57 MHz across Vctrl = 0.7V to 1.7V.
 
 ## How to test
 
