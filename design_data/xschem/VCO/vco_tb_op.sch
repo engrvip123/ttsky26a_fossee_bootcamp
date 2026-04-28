@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 B 2 1740 -570 2540 -170 {flags=graph
-y1=-0.23748273
-y2=1.9945999
+y1=0
+y2=0.01
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.9499922e-06
-x2=2.0097598e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -31,16 +31,25 @@ N 1250 70 1250 90 {lab=0}
 N 1200 220 1220 220 {lab=vctrl}
 N 1220 220 1220 240 {lab=vctrl}
 N 1220 300 1220 320 {lab=0}
-N 1600 150 1650 150 {lab=out}
+N 1720 130 1770 130 {lab=out}
 N 1380 130 1410 130 {lab=vdd}
 N 1400 170 1400 180 {lab=0}
 N 1400 170 1410 170 {lab=0}
-N 1630 155 1630 165 {lab=out}
-N 1630 150 1630 155 {lab=out}
+N 1650 225 1650 235 {lab=out}
+N 1750 130 1750 135 {lab=out}
 N 1410 225 1630 225 {lab=0}
 N 1410 170 1410 225 {lab=0}
+N 1650 300 1650 310 {lab=0}
+N 1630 310 1650 310 {lab=0}
+N 1630 230 1630 310 {lab=0}
+N 1650 295 1650 300 {lab=0}
+N 1630 225 1630 230 {lab=0}
+N 1710 130 1720 130 {lab=out}
+N 1750 135 1750 220 {lab=out}
+N 1650 220 1750 220 {lab=out}
+N 1650 220 1650 225 {lab=out}
 C {ipin.sym} 1340 150 0 0 {name=p1 lab=vctrl}
-C {iopin.sym} 1650 150 0 0 {name=p2 lab=out}
+C {iopin.sym} 1770 130 0 0 {name=p2 lab=out}
 C {code_shown.sym} 1810 -80 0 0 {name=NGSPICE only_toplevel=false value="
 .control
     * Create vectors to store data for exactly 3 points
@@ -72,7 +81,7 @@ C {code_shown.sym} 1810 -80 0 0 {name=NGSPICE only_toplevel=false value="
 C {vsource.sym} 1250 40 0 0 {name=V1 value=1.8 savecurrent=false}
 C {lab_pin.sym} 1250 10 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {gnd.sym} 1250 90 0 0 {name=l3 lab=0}
-C {vsource.sym} 1220 270 0 0 {name=V2 value=1.8 savecurrent=false}
+C {vsource.sym} 1220 270 0 0 {name=V2 value=0.7 savecurrent=false}
 C {gnd.sym} 1220 320 0 0 {name=l4 lab=0}
 C {lab_pin.sym} 1200 220 0 0 {name=p5 sig_type=std_logic lab=vctrl}
 C {devices/code.sym} 1480 440 0 0 {name=TT_MODELS
@@ -80,18 +89,18 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice fs
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
 C {launcher.sym} 1530 -260 0 0 {name=h5
 descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/vco_tb.raw tran"
 }
-C {xschem/VCO/vco.sym} 1560 150 0 0 {name=x1}
 C {lab_pin.sym} 1380 130 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {gnd.sym} 1400 180 0 0 {name=l1 lab=0}
-C {capa-2.sym} 1630 195 0 0 {name=C1
+C {capa-2.sym} 1650 265 0 0 {name=C1
 m=1
 value=50f
 footprint=1206
 device=polarized_capacitor}
+C {xschem/VCO/vco_1.sym} 1560 150 0 0 {name=x1}

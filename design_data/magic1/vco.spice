@@ -94,15 +94,20 @@ X9 S3 G D2 B sky130_fd_pr__pfet_01v8 ad=1.073 pd=7.69 as=1.073 ps=7.69 w=7.4 l=1
 XXM15 GND GND XM4/G XM17/G GND XM17/G GND XM17/G sky130_fd_pr__nfet_01v8_QMGPN5
 XXM16 VDD VDD XM4/G XM17/G VDD XM17/G VDD XM17/G sky130_fd_pr__pfet_01v8_BS784P
 XXM17 GND out XM17/G GND out GND out GND sky130_fd_pr__nfet_01v8_6CS3TQ
-Xsky130_fd_pr__nfet_01v8_NWZ7BA_0 GND sky130_fd_pr__pfet_01v8_8ULR7S_2/G XM4/D8 GND
-+ sky130_fd_pr__pfet_01v8_8ULR7S_2/G GND sky130_fd_pr__pfet_01v8_8ULR7S_2/G GND sky130_fd_pr__pfet_01v8_8ULR7S_2/G
-+ GND sky130_fd_pr__pfet_01v8_8ULR7S_2/G GND sky130_fd_pr__pfet_01v8_8ULR7S_2/G sky130_fd_pr__nfet_01v8_NWZ7BA
-Xsky130_fd_pr__nfet_01v8_NWZ7BA_1 GND XM4/G sky130_fd_pr__pfet_01v8_8ULR7S_2/G GND
-+ XM4/G GND XM4/G GND XM4/G GND XM4/G GND XM4/G sky130_fd_pr__nfet_01v8_NWZ7BA
+Xsky130_fd_pr__nfet_01v8_NWZ7BA_0 GND sky130_fd_pr__pfet_01v8_8ULR7S_2/G XM4/D8 sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9
++ sky130_fd_pr__pfet_01v8_8ULR7S_2/G sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9 sky130_fd_pr__pfet_01v8_8ULR7S_2/G
++ sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9 sky130_fd_pr__pfet_01v8_8ULR7S_2/G sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9
++ sky130_fd_pr__pfet_01v8_8ULR7S_2/G sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9 sky130_fd_pr__pfet_01v8_8ULR7S_2/G
++ sky130_fd_pr__nfet_01v8_NWZ7BA
+Xsky130_fd_pr__nfet_01v8_NWZ7BA_1 GND XM4/G sky130_fd_pr__pfet_01v8_8ULR7S_2/G sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9
++ XM4/G sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9 XM4/G sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9
++ XM4/G sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9 XM4/G sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9
++ XM4/G sky130_fd_pr__nfet_01v8_NWZ7BA
 XXM1 VDD VDD XM7/G XM1/S4 VDD XM1/S4 VDD XM1/S4 sky130_fd_pr__pfet_01v8_J8A8UZ
-XXM4 GND XM4/D8 XM4/G GND XM4/D8 GND XM4/D8 GND XM4/D8 GND XM4/D8 GND XM4/D8 sky130_fd_pr__nfet_01v8_NWZ7BA
+XXM4 GND XM4/D8 XM4/G XM5/S4 XM4/D8 XM5/S4 XM4/D8 XM5/S4 XM4/D8 XM5/S4 XM4/D8 XM5/S4
++ XM4/D8 sky130_fd_pr__nfet_01v8_NWZ7BA
 Xsky130_fd_pr__pfet_01v8_PR8SW8_0 VDD VDD XM17/G out VDD out VDD out sky130_fd_pr__pfet_01v8_PR8SW8
-XXM5 GND GND vctrl GND GND GND GND GND sky130_fd_pr__nfet_01v8_68KXJR
+XXM5 GND GND vctrl XM5/S4 GND XM5/S4 GND XM5/S4 sky130_fd_pr__nfet_01v8_68KXJR
 XXM7 VDD VDD XM7/G XM7/G VDD XM7/G VDD XM7/G sky130_fd_pr__pfet_01v8_3VA8U9
 XXM8 GND XM7/G vctrl GND XM7/G GND XM7/G GND sky130_fd_pr__nfet_01v8_CRPCLH
 Xsky130_fd_pr__pfet_01v8_J8A8UZ_0 VDD VDD XM7/G sky130_fd_pr__pfet_01v8_8ULR7S_2/B
@@ -120,7 +125,11 @@ Xsky130_fd_pr__pfet_01v8_8ULR7S_2 sky130_fd_pr__pfet_01v8_8ULR7S_2/B XM4/G sky13
 + sky130_fd_pr__pfet_01v8_8ULR7S_2/B XM4/G sky130_fd_pr__pfet_01v8_8ULR7S_2/B XM4/G
 + sky130_fd_pr__pfet_01v8_8ULR7S_2/B XM4/G sky130_fd_pr__pfet_01v8_8ULR7S_2/B XM4/G
 + sky130_fd_pr__pfet_01v8_8ULR7S_2/B XM4/G sky130_fd_pr__pfet_01v8_8ULR7S
-Xsky130_fd_pr__nfet_01v8_68KXJR_0 GND GND vctrl GND GND GND GND GND sky130_fd_pr__nfet_01v8_68KXJR
-Xsky130_fd_pr__nfet_01v8_68KXJR_1 GND GND vctrl GND GND GND GND GND sky130_fd_pr__nfet_01v8_68KXJR
+Xsky130_fd_pr__nfet_01v8_68KXJR_0 GND GND vctrl sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9
++ GND sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9 GND sky130_fd_pr__nfet_01v8_NWZ7BA_0/S9
++ sky130_fd_pr__nfet_01v8_68KXJR
+Xsky130_fd_pr__nfet_01v8_68KXJR_1 GND GND vctrl sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9
++ GND sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9 GND sky130_fd_pr__nfet_01v8_NWZ7BA_1/S9
++ sky130_fd_pr__nfet_01v8_68KXJR
 .ends
 
