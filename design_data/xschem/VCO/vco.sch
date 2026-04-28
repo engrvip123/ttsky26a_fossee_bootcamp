@@ -353,3 +353,4 @@ spiceprefix=X
 }
 C {ipin.sym} -10 200 0 0 {name=p4 lab=GND}
 C {ipin.sym} -190 -210 0 0 {name=p5 lab=VDD}
+
