@@ -12,6 +12,7 @@
 
 ## Schematic
 <img width="1820" height="765" alt="image" src="https://github.com/user-attachments/assets/3650ff5d-d5a2-491a-9665-3f2bb948e14c" />
+
 ## Frequency vs. Vctrl (TT, 27°C)
 
 | Vctrl (V) | 0.70 | 0.80 | 0.90 | 1.00 | 1.10 | 1.20 | 1.30 | 1.40 | 1.50 | 1.60 | 1.70 |
