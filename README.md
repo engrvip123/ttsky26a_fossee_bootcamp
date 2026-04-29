@@ -1,5 +1,5 @@
 # Introduction
-I am Alaqmar Karampurwala, a final-year student at VIT Vellore, selected to participate in the IEEE Open-Silicon Bootcamp. Following an introduction and hands-on training in open-source EDA tools such as Xschem and Magic, I designed a 3-stage current-starved ring VCO using the SkyWater 130nm process and completed its layout. Through this bootcamp, I gained practical exposure to the analog IC design flow and earned the opportunity to contribute to a tapeout.
+I am a 4th-year student who was selected to participate in the IEEE Open-Silicon Bootcamp. Following an introduction to open-source EDA tools such as xschem and magic, I designed a 3-stage current-starved ring VCO using skywater 130nm process and completed its layout. Through this bootcamp, I gained hands-on exposure to the analog IC design flow and earned the opportunity to participate in a tapeout.
 
 # 3-Stage Current-Starved Ring VCO
 **Process:** SkyWater Sky130 (130 nm) | **Tools:** Xschem + NGspice + Magic
