@@ -1,5 +1,5 @@
 # Introduction
-I am a 4th-year student who was selected to participate in the IEEE Open-Silicon Bootcamp. Following an introduction to open-source EDA tools, I designed a 3-stage current-starved ring VCO and completed its layout. Through this bootcamp, I gained hands-on exposure to the analog IC design flow and earned the opportunity to participate in a tapeout.
+I am a 4th-year student who was selected to participate in the IEEE Open-Silicon Bootcamp. Following an introduction to open-source EDA tools such as xschem and magic, I designed a 3-stage current-starved ring VCO using skywater 130nm process and completed its layout. Through this bootcamp, I gained hands-on exposure to the analog IC design flow and earned the opportunity to participate in a tapeout.
 
 # 3-Stage Current-Starved Ring VCO
 **Process:** SkyWater Sky130 (130 nm) | **Tools:** Xschem + NGspice + Magic
