@@ -1,0 +1,22 @@
+** sch_path: /home/vboxuser/projects/xschem/VCO/vco.sch
+.subckt vco VDD out vctrl GND
+*.PININFO vctrl:I out:B GND:I VDD:I
+XM7 net5 net5 VDD VDD sky130_fd_pr__pfet_01v8 L=3.2 W=70 nf=1
+XM8 net5 vctrl GND GND sky130_fd_pr__nfet_01v8 L=4.2 W=40 nf=1
+XM5 net1 vctrl GND GND sky130_fd_pr__nfet_01v8 L=4.2 W=40 nf=1
+XM6 net2 net4 net1 GND sky130_fd_pr__nfet_01v8 L=1.4 W=49 nf=1
+XM1 net3 net5 VDD VDD sky130_fd_pr__pfet_01v8 L=3.2 W=70 nf=1
+XM2 net2 net4 net3 net3 sky130_fd_pr__pfet_01v8 L=1.4 W=74 nf=1
+XM3 net6 vctrl GND GND sky130_fd_pr__nfet_01v8 L=4.2 W=40 nf=1
+XM9 net7 net5 VDD VDD sky130_fd_pr__pfet_01v8 L=3.2 W=70 nf=1
+XM11 net8 vctrl GND GND sky130_fd_pr__nfet_01v8 L=4.2 W=40 nf=1
+XM13 net9 net5 VDD VDD sky130_fd_pr__pfet_01v8 L=3.2 W=70 nf=1
+XM4 net10 net2 net6 GND sky130_fd_pr__nfet_01v8 L=1.4 W=49 nf=1
+XM10 net10 net2 net7 net7 sky130_fd_pr__pfet_01v8 L=1.4 W=74 nf=1
+XM12 net4 net10 net8 GND sky130_fd_pr__nfet_01v8 L=1.4 W=49 nf=1
+XM14 net4 net10 net9 net9 sky130_fd_pr__pfet_01v8 L=1.4 W=74 nf=1
+XM15 net11 net4 GND GND sky130_fd_pr__nfet_01v8 L=1 W=10 nf=1
+XM16 net11 net4 VDD VDD sky130_fd_pr__pfet_01v8 L=1 W=20 nf=1
+XM17 out net11 GND GND sky130_fd_pr__nfet_01v8 L=1 W=20 nf=1
+XM18 out net11 VDD VDD sky130_fd_pr__pfet_01v8 L=1 W=40 nf=1
+.ends
