@@ -9,7 +9,7 @@
 # Change the settings below to match your design:
 # ------------------------------------------------
 
-set TOP_LEVEL_CELL     tt_um_fossee_open_silicon
+set TOP_LEVEL_CELL     tt_um_IEEE_open_silicon_FOSSEE
 set TEMPLATE_FILE      tt_analog_1x2.def
 set POWER_STRIPE_WIDTH 2um                 ;# The minimum width is 1.2um
 
