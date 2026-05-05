@@ -1,8 +1,8 @@
 # Integrated Analog IC Designs: Ring Oscillator VCO & Differential Amplifier
 
-This repository contains custom analog IC designs developed and integrated as part of the **Analog IC Design Bootcamp** organized by FOSSEE, IIT Bombay (April 11–13, 2026). The bootcamp covered the complete design workflow of custom analog IC design using open-source EDA tools, including Xschem, NGspice, Magic, Netgen, and the Sky130 PDK. The event was attended by more than 20 participants. 
+This repository contains custom analog IC designs developed and integrated as part of the **Analog IC Design Bootcamp** organized in online mode under banner of FOSSEE, IIT Bombay (April 11–13, 2026). The bootcamp covered complete design workflow of custom analog IC design using open-source EDA tools, including Xschem, NGspice, Magic, Netgen and Sky130 PDK. The event was attended by more than 20 participants. This bootcamp used a dedicated Docker image **OpenAnalogDockSky130**, prepared for participants to provide a ready-to-use platform with all required EDA tools and the SKY130 PDK pre-installed.
 
-This specific project features two designs integrated into a single Tiny Tapeout tile: a Ring Oscillator-based VCO by Alaqmar and a Differential Amplifier by Pandiyarajan.
+This specific project features two designs integrated into a single Tiny Tapeout tile submitted by two participants: a Ring Oscillator-based VCO by **Alaqmar Karampurwala**, a final-year student at VIT Vellore and a Differential Amplifier by **Pandiyarajan.S**, 2nd year ECE student at Chennai Institute of technology.
 
 ---
 
@@ -16,14 +16,12 @@ Due to Tiny Tapeout analog pin constraints (4 available analog pins per tile), t
 | **`ua[1]`** | **Diff-Amp $V_{in+}$** | Dedicated non-inverting analog input for the amplifier. |
 | **`ua[2]`** | **Diff-Amp $V_{in-}$** | Dedicated inverting analog input for the amplifier. |
 | **`ua[3]`** | **Diff-Amp $V_{out}$** | Dedicated analog output for the amplifier. |
-| **`uo_out[0]`**| **VCO Output** | Direct digital output from the VCO (50MHz range). |
-
-*Note: During Differential Amplifier characterization, 50MHz switching noise from the VCO may be present. Use oscilloscope averaging or low-pass filtering to isolate the amplifier's response.*
+| **`uo_o[0]`**| **VCO Output** | Direct digital output from the VCO (50MHz range). |
 
 ---
 
 ## 🔬 Design 1: 3-Stage Current-Starved Ring VCO
-**Author:** Alaqmar | **Process:** SkyWater Sky130 (130 nm) | **Tools:** Xschem, NGspice, Magic
+**Author:** Alaqmar Karampurwala | **Process:** SkyWater Sky130 (130 nm) | **Tools:** Xschem, NGspice, Magic, Netgen
 
 ### Specifications
 * **Supply Voltage**: 1.8 V
@@ -119,20 +117,6 @@ OpenAnalogDockSky130/
 
 ## Differential Amplifier Layout - Pandiyarajan
 
-### Designer
-- **Name:** Pandiyarajan S
-- **Email:** s.pandiyarajan1203@gmail.com
-- **GitHub:** Pandiya2007
-- **Institution:** ECE Undergraduate, India
-
----
-
-### Circuit
-- **Type:** Differential Amplifier
-- **Technology:** sky130A (130nm)
-- **Tool:** Magic VLSI
-- **PDK:** SkyWater sky130A
-
 ---
 ### circuit schematic
 <img width="1727" height="925" alt="DIFF_AMP_WITHACTIVELOAD" src="https://github.com/user-attachments/assets/d4e5df48-3291-49e7-8160-9eb7c5759ce7" />
@@ -200,7 +184,7 @@ OpenAnalogDockSky130/
 | **Magic**  | Layout design and GDSII export       |
 | **Netgen** | LVS (Layout vs. Schematic) check     |
 
-All tools are pre-installed inside the **OpenAnalogDockSky130** Docker container image (`vishalgupta7/openanalogdocksky130:latest`).
+All tools are pre-installed inside the **OpenAnalogDockSky130** Docker container image.
 
 ---
 
@@ -289,8 +273,3 @@ Path inside container: `/pdks/sky130A/`
 Library used: `sky130.lib.spice tt` (typical-typical corner)
 
 ---
-
-## Author
-
-**PANDIYARAJAN**  
-Design submitted as part of the OpenAnalogDockSky130 open-source analog design workflow.
