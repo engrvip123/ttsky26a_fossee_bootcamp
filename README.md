@@ -115,7 +115,7 @@ OpenAnalogDockSky130/
 
 ---
 
-## Differential Amplifier Layout - Pandiyarajan
+## Differential Amplifier Layout 
 
 ---
 ### circuit schematic
