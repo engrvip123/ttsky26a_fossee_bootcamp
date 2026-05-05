@@ -2,11 +2,11 @@
 
 This repository contains custom analog IC designs developed and integrated as part of the **Analog IC Design Bootcamp** organized in online mode under banner of **FOSSEE, IIT Bombay (April 11–13, 2026)**. The bootcamp covered complete design workflow of custom analog IC design using open-source EDA tools, including Xschem, NGspice, Magic, Netgen and Sky130 PDK. The event was attended by more than 20 participants. This bootcamp used a dedicated Docker image **OpenAnalogDockSky130**, prepared for participants to provide a ready-to-use platform with all required EDA tools and the SKY130 PDK pre-installed.
 
-This specific project features two designs integrated into a single Tiny Tapeout tile submitted by two participants: a Ring Oscillator-based VCO by **Alaqmar Karampurwala**, a final-year student at VIT Vellore and a Differential Amplifier by **Pandiyarajan.S**, 2nd year ECE student at Chennai Institute of technology.
+This specific project features two designs integrated into a single Tiny Tapeout tile submitted by two participants: a Ring Oscillator-based VCO by **Alaqmar Karampurwala**, a final-year student at **VIT Vellore** and a Differential Amplifier by **Pandiyarajan.S**, 2nd year ECE student at **Chennai Institute of technology**.
 
 ---
 
-## 🏗️ Integration Architecture & Pinout
+## Integration Architecture & Pinout
 
 Due to Tiny Tapeout analog pin constraints (4 available analog pins per tile), these two designs share a common DC bias/control pin at the top-level layout. Both circuits are permanently powered, and testing is isolated through digital and analog routing.
 
@@ -16,11 +16,11 @@ Due to Tiny Tapeout analog pin constraints (4 available analog pins per tile), t
 | **`ua[1]`** | **Diff-Amp $V_{in+}$** | Dedicated non-inverting analog input for the amplifier. |
 | **`ua[2]`** | **Diff-Amp $V_{in-}$** | Dedicated inverting analog input for the amplifier. |
 | **`ua[3]`** | **Diff-Amp $V_{out}$** | Dedicated analog output for the amplifier. |
-| **`uo_o[0]`**| **VCO Output** | Direct digital output from the VCO (50MHz range). |
+| **`uo[0]`**| **VCO Output** | Direct digital output from the VCO (50MHz range). |
 
 ---
 
-## 🔬 Design 1: 3-Stage Current-Starved Ring VCO
+## Design 1: 3-Stage Current-Starved Ring VCO
 **Author:** Alaqmar Karampurwala | **Process:** SkyWater Sky130 (130 nm) | **Tools:** Xschem, NGspice, Magic, Netgen
 
 ### Specifications
@@ -40,7 +40,7 @@ Due to Tiny Tapeout analog pin constraints (4 available analog pins per tile), t
 
 ---
 
-## 📈 Design 2: Differential Amplifier (DIFF_AMP)
+## Design 2: Differential Amplifier (DIFF_AMP)
 **Author:** Pandiyarajan | **Process:** SkyWater Sky130 (130 nm) | **Tools:** Xschem, NGspice, Magic, Netgen
 
 # Differential Amplifier (DIFF_AMP)
@@ -216,8 +216,6 @@ All tools are pre-installed inside the **OpenAnalogDockSky130** Docker container
 ### testbench 
 <img width="1736" height="927" alt="Screenshot 2026-05-01 191827" src="https://github.com/user-attachments/assets/e627a565-4f06-4286-84e3-93b229ba7728" />
 
-
-
 ---
 
 ## LVS Result
@@ -231,38 +229,6 @@ Final result: Circuits match uniquely.
 
 
 Both NFET and PFET device classes were verified equivalent, with 5 devices and 8 nets on each side.
-
----
-
-## How to Run
-
-### Prerequisites
-- Docker and Docker Compose installed
-
-### Steps
-
-```bash
-# 1. Clone or extract the project
-cd OpenAnalogDockSky130
-
-# 2. Create the .env file (already provided)
-# Default VNC password: Hello@1234
-
-# 3. Start the container
-docker compose up -d
-
-# 4. Access the desktop via browser
-# Open: http://localhost:6080
-
-# Or via VNC client at: localhost:5901
-# Password: Hello@1234
-```
-
-### Running Simulation in NGspice (inside container)
-
-```bash
-ngspice DIFF_AMP_TB_TRANS.spice
-```
 
 ---
 
