@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_fossee_open_silicon (
+module tt_um_IEEE_open_silicon_FOSSEE (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
 //    input  wire       VAPWR,    // 3.3v power supply
