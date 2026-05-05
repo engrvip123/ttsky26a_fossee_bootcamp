@@ -1,6 +1,6 @@
-# Integrated Analog IC Designs: Ring Oscillator VCO & Differential Amplifier
+# IEEE Open-Silicon Bootcamp Design Submission: Ring Oscillator VCO & Differential Amplifier
 
-This repository contains custom analog IC designs developed and integrated as part of the **Analog IC Design Bootcamp** organized in online mode under banner of FOSSEE, IIT Bombay (April 11–13, 2026). The bootcamp covered complete design workflow of custom analog IC design using open-source EDA tools, including Xschem, NGspice, Magic, Netgen and Sky130 PDK. The event was attended by more than 20 participants. This bootcamp used a dedicated Docker image **OpenAnalogDockSky130**, prepared for participants to provide a ready-to-use platform with all required EDA tools and the SKY130 PDK pre-installed.
+This repository contains custom analog IC designs developed and integrated as part of the **Analog IC Design Bootcamp** organized in online mode under banner of **FOSSEE, IIT Bombay (April 11–13, 2026)**. The bootcamp covered complete design workflow of custom analog IC design using open-source EDA tools, including Xschem, NGspice, Magic, Netgen and Sky130 PDK. The event was attended by more than 20 participants. This bootcamp used a dedicated Docker image **OpenAnalogDockSky130**, prepared for participants to provide a ready-to-use platform with all required EDA tools and the SKY130 PDK pre-installed.
 
 This specific project features two designs integrated into a single Tiny Tapeout tile submitted by two participants: a Ring Oscillator-based VCO by **Alaqmar Karampurwala**, a final-year student at VIT Vellore and a Differential Amplifier by **Pandiyarajan.S**, 2nd year ECE student at Chennai Institute of technology.
 
