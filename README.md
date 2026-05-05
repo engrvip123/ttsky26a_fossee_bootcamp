@@ -1,4 +1,4 @@
-# IEEE Open-Silicon Bootcamp Design Submission: Ring Oscillator VCO & Differential Amplifier
+# IEEE Open-Silicon Bootcamp Design Submission:  Ring Oscillator VCO & Differential Amplifier
 
 This repository contains custom analog IC designs developed and integrated as part of the **Analog IC Design Bootcamp** organized in online mode under banner of **FOSSEE, IIT Bombay (April 11–13, 2026)**. The bootcamp covered complete design workflow of custom analog IC design using open-source EDA tools, including Xschem, NGspice, Magic, Netgen and Sky130 PDK. The event was attended by more than 20 participants. This bootcamp used a dedicated Docker image **OpenAnalogDockSky130**, prepared for participants to provide a ready-to-use platform with all required EDA tools and the SKY130 PDK pre-installed.
 
