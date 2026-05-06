@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "Analog ring oscillator VCO"      # Project title
+  title:        "Ring oscillator VCO and Differential Amplifier"      # Project title
   author:       "Vipul Sharma"      # Your name
   discord:      "vipul.sh"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Current-controlled analog VCO "      # One line description of what your project does

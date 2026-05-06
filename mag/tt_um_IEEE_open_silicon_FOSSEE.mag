@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1777968421
+timestamp 1778056453
 << metal1 >>
 rect 198 27620 208 29340
 rect 578 28936 588 29340
@@ -267,10 +267,10 @@ use DIFF_AMP  DIFF_AMP_0 ./../design_data_diffamp/test_design/magic
 timestamp 1777532616
 transform 1 0 18668 0 1 7312
 box 2390 -3110 8322 6016
-use vco  vco_0 ~/ttsky26a_fossee_bootcamp/mag/../design_data_vco/magic1
-timestamp 1777392155
+use vco  vco_0 ~/ttsky26a_IEEE_open_silicon_FOSSEE/design_data_vco/magic1
+timestamp 1777446691
 transform 1 0 12130 0 1 38368
-box -2516 -20840 17828 -9466
+box -2516 -20840 17828 -9386
 << labels >>
 flabel metal4 s 28766 44952 28826 45152 0 FreeSans 480 90 0 0 clk
 port 0 nsew signal input
